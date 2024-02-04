@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  pre_tasks:
+  - name: Update Repository index and Upgrade (Debian or Ubuntu)
+    apt:
+      update_cache: yes
+      upgrade: yes
