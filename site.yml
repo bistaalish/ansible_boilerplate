@@ -6,3 +6,5 @@
     apt:
       update_cache: yes
       upgrade: yes
+  roles:
+    - base
